@@ -117,6 +117,7 @@
   margin: 0px 200px;
   display: flex;
 }
+
 .oficinas-titulo {
   display: flex;
   flex-direction: column;
@@ -125,17 +126,24 @@
 
 .oficinas-contenido {
   display: flex;
+  flex-direction: column;
   width: 70%;
-  background-color: red;
 }
 
+.oficinas-contenido-fila {
+  display: flex;
+  height: 50%;
+  margin: 10px;
+}
 
+.oficinas-contenido-columna {
+  flex: 1; /* Hacer que las columnas se expandan para ocupar todo el espacio disponible */
+  margin: 10px;
+  background-color: var(--colorgrisclaro);
 
-
-
-
-
-
+  width: 50%; /* Ajustar el ancho de las columnas al 50% */
+  box-sizing: border-box;
+}
 
 .container-prefooter,
 .container-prefooter-detail {
