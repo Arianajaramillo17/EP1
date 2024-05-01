@@ -15,7 +15,6 @@
 body{ /* REGLA DE ESTILOS para la regla de body */
     font-family: Jost, sans-serif; /* tipo de letra */
     margin: 0; /* así se elimina el espacio por defecto de body*/
-
     font-size: 18px;
 }
 p{
