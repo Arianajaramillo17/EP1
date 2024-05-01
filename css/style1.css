@@ -82,7 +82,7 @@
 }
 .card-contenido {
   padding: 10px 0px;
-}
+} 
 .historia {
   width: calc(100% - 400px);
   height: 800px;
@@ -110,4 +110,32 @@
 .historia-contenido-card-contenido {
   width: 50%;
   padding: 10px;
+}
+.container-prefooter,
+.container-prefooter-detail{
+  display:flex;
+  flex-direction: row;
+
+
+}
+.container-prefooter{
+  margin:10px;
+  padding: 0px 200px;
+
+}
+.main-footer-text{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  color: var(---colorblanco);
+  background-color: var(--color5);
+  padding: 0px 200px;
+}
+.container-prefooter-detail{
+  width: calc(50% - 20px);
+  height: auto;
+  padding: 0px 50px;
+  justify-content: center;
 }
