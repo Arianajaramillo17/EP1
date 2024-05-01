@@ -5,7 +5,7 @@
   padding: 0px;
   font-family: Jost, sans-serif; /* tipo de letra */
   margin: 0; /* así se elimina el espacio por defecto de body*/
-  font-size: 18px;
+
 }
 :root {
   /*hace referencia al objeto html*/
@@ -58,7 +58,7 @@
   height: 300px;
   justify-content: center;
   align-items: start;
-  margin-top: 30px;
+  margin:50px 0px;
 }
 .padded h2 {
   display: flex;
@@ -89,10 +89,16 @@
 .card-contenido {
   padding: 10px 0px;
 }
+.historia-container{
+  background-color: var(--color4);
+}
 .historia {
+  display: flex;
   width: calc(100% - 400px);
-  height: 800px;
-  margin: 0px 200px;
+  margin: 9px 200px;
+  flex-direction: column;
+  align-items: flex-start;
+
 }
 .historia-titulo {
   display: flex;
@@ -102,26 +108,33 @@
 .historia-contenido {
   height: 600px;
   display: flex;
-  width: 1280px;
+
+  gap:50px
 }
 .historia-contenido-card {
-  width: 640px;
-  height: 300px;
+
   display: flex;
+  gap:50px;
+  align-items: center
+}
+.historia-contenido-card-contenido p{
+  font-size: 12px;
 }
 .historia-contenido-card-img {
-  width: 50%;
+  width: 150%;
   background-color: var(--colorgrisclaro);
 }
 .historia-contenido-card-contenido {
-  width: 50%;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 5px;
 }
 .oficinas {
   width: calc(100% - 400px);
   height: 700px;
-  margin: 0px 200px;
+  margin: 20px 200px;
   display: flex;
+  align-items: center;
+  gap:50px;
 }
 
 .oficinas-titulo {
@@ -140,18 +153,22 @@
   display: flex;
   height: 50%;
   margin: 10px;
+  gap:25px
 }
 
 .oficinas-contenido-columna {
   flex: 1; /* Hacer que las columnas se expandan para ocupar todo el espacio disponible */
-  margin: 10px;
-  background-color: var(--colorgrisclaro);
-  width: 50%; /* Ajustar el ancho de las columnas al 50% */
+
+
+  /* Ajustar el ancho de las columnas al 50% */
   box-sizing: border-box;
+}
+.conferencias-container{
+  background-color: var(--color3);
 }
 .conferencias {
   width: calc(100% - 400px);
-  height: 500px;
+
   margin: 50px 200px;
   display: flex;
   flex-direction: column;
@@ -163,12 +180,13 @@
   height: 50px;
 }
 .conferencias-fila-card-img {
-  background-color: var(--colorgrisclaro);
+ 
   height: 300px;
 }
 .conferencias-fila {
   display: flex;
-  height: 500px;
+gap: 25px;
+
 }
 
 .columna {
@@ -186,7 +204,7 @@
 .presentaciones {
   width: calc(100% - 400px);
   height: 500px;
-  margin: 0px 200px;
+  margin: 80px 200px;
   display: flex;
 }
 .presentaciones-img {
@@ -209,6 +227,9 @@
   display: flex;
   align-items: center;
 }
+.footer-principal-cnt{
+  background-color: var(--color4); 
+}
 .footer-principal {
   width: 40%;
   margin-right: 200px;
@@ -221,11 +242,14 @@
   width: 25%;
   margin: 15px;
 }
+.main-footer-container{
+   background-color: var(--colorgrisclaro); 
+}
 .main-footer {
   width: calc(100% - 400px);
   height: 50px;
   margin: 0px 200px;
   display: flex;
   align-items: center;
-  background-color: var(--colorgrisclaro);
+
 }
