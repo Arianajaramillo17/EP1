@@ -41,7 +41,8 @@
 .cabecera {
   display: flex;
   height: 100px;
-  background-color: var(--colorgrisclaro);
+  background-color: var(---colorblanco);
+  color: var(--color1);
   flex-direction: column;
   justify-content: center;
   align-items: start;
