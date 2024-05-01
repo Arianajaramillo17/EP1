@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;700;900&family'); /* vincular fuentes de google */
+
+:root{  /*hace referencia al objeto html*/
+    --color1:#470459;
+    --color2:#8538A6;
+    --color3:#7386BF;
+    --color4:#F2CB57;
+    --color5:#D97652;
+    ---colorblanco: #FFFFFF;
+    --colornegro: #000000;
+    --colorgrisclaro: #CCCCCC;
+    --colorgrisoscucro: #333333;
+    /* variables css de color */
+}
+body{ /* REGLA DE ESTILOS para la regla de body */
+    font-family: Jost, sans-serif; /* tipo de letra */
+    margin: 0; /* así se elimina el espacio por defecto de body*/
+
+    font-size: 18px;
+}
+p{
+    margin: 10px;
+}
+img{
+    display: block; /* elimina el espacio inferior por defecto de las imagenes*/
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0; /* asi se elimina el espacio por defecto de los encabezados*/
+    line-height: 1.2em;
+    margin-bottom: 0.75em;
+}
+
+h1{
+        font-size: 64px; /* tamaño fuente */
+        font-weight: 400; /* grosor o familia */
+        letter-spacing: -4px;/* espacio entre letras general */
+        margin-bottom: 0;
+}
+
+h2{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+h3{
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase; /* así se pone en mayúscula */
+    }
+h4{
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+    p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+#main-header {
+    display:flex ;
+    flex-direction: column;
+    width: 100%;
+}
+.container p,
+.container h1, 
+.container h2,
+.container h3,
+.container h4 {
+    padding-left: 70px;
+    
+}
+    #nosotros{  /* regla de estilos para un objeto por su id (empieza cpn #) solo se puede tener uno */
+        background-color: var(--color3);
+        color: var(--color1);
+    } /*BORRAR #NOSOTROS*/
+    #separtedenuestramanada img{
+        margin-bottom: 20px;
+    }
+    #historia{
+        background-color:var(--color2);
+        color: var(--color4);
+    }
+    #eventos{
+        color: var(--color1);
+    }
+    #empresa{
+        background-color: var(--color4);
+        color: var(--color1);
+    }
+    #conferencia{
+        background-color: var(--color5);
+        color: var(--color4);
+    }
+    #footer{
+
+    }
+    #main-footer{
+        background-color: var(--colorgrisoscucro);
+        color: var(--colorgrisclaro);
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .padded{ /* regla de estilos para una clase (empieza con punto) se puede usar en varios*/
+    
+        padding-bottom: 90px;
+        /* padding es la distancia del borde al contenido*/
+    }
+    .phrase{
+        font-size: 20px;
+        width: 100%;
+        align-items: center; 
+        height: 100%;
+        background-color: var(--color5);
+        color: var(---colorblanco);
+    }
+ 
+    .row{
+        display: flex; /* acomoda a los objetos que contiene directamente uno al costado del otro */
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .col{
+        flex-basis: 0; 
+        flex-grow: 1; 
+        box-sizing: border-box; /*para que el padding no incremente el ancho(en este caso)*/
+        /* con ambas propiedades el ancho de las columnas es el mismo */
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .col-50{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .col-66{
+        flex-basis: 66.67%;
+        max-width: 66.67%;
+    }
+    .col-75{
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+    .col-25{
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    .img-fluid{
+        max-width: 100%;
+    }
+    .centrado-vertical{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .container2{
+        display:flex;
+        flex-direction: column;
+    }
+    .cola {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribuye el espacio entre las imágenes */
+      }
+      
+      .cola img {
+        width: calc(20% - 10px); /* Ancho del 50% del contenedor, menos el margen entre imágenes */
+        height: calc(20% - 10px);
+        margin-bottom: 20px; /* Espacio entre imágenes */
+      }
