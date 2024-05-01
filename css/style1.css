@@ -83,3 +83,19 @@
 .card-contenido {
   padding: 10px 0px;
 }
+.historia {
+  width: calc(100% - 400px);
+  height: 800px;
+  margin: 0px 200px;
+}
+.historia-titulo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.historia-contenido {
+  height: 500px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
