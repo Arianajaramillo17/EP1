@@ -140,9 +140,41 @@
   flex: 1; /* Hacer que las columnas se expandan para ocupar todo el espacio disponible */
   margin: 10px;
   background-color: var(--colorgrisclaro);
-
   width: 50%; /* Ajustar el ancho de las columnas al 50% */
   box-sizing: border-box;
+}
+.conferencias {
+  width: calc(100% - 400px);
+  height: 500px;
+  margin: 50px 200px;
+  display: flex;
+  flex-direction: column;
+}
+.conferencias-titulo {
+  height: 100px;
+}
+.conferencias-fila-card-titulo {
+  height: 50px;
+}
+.conferencias-fila-card-img {
+  background-color: var(--colorgrisclaro);
+  height: 300px;
+}
+.conferencias-fila {
+  display: flex;
+  height: 500px;
+}
+
+.columna {
+  padding: 10px;
+}
+
+.columna-30 {
+  flex: 30%;
+}
+
+.columna-40 {
+  flex: 40%;
 }
 
 .container-prefooter,
