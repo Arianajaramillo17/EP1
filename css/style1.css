@@ -94,8 +94,20 @@
   height: 100px;
 }
 .historia-contenido {
-  height: 500px;
-  padding: 100px;
+  height: 600px;
   display: flex;
-  flex-direction: column;
+  width: 1280px;
+}
+.historia-contenido-card {
+  width: 640px;
+  height: 300px;
+  display: flex;
+}
+.historia-contenido-card-img {
+  width: 50%;
+  background-color: var(--colorgrisclaro);
+}
+.historia-contenido-card-contenido {
+  width: 50%;
+  padding: 10px;
 }
